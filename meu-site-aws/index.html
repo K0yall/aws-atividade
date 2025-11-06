@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Servidor EC2 - AWS</title>
+
+    <style>
+        /* ====== RESET ====== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* ====== BODY ====== */
+        body {
+            font-family: "Inter", Arial, sans-serif;
+            background-color: #0f1115;
+            color: #e6e6e6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* ====== HEADER ====== */
+        header {
+            background: #16191f;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            border-bottom: 1px solid #2a2d34;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            color: #4f8cff;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            color: #a0a0a0;
+            font-size: 1rem;
+        }
+
+        /* ====== MAIN ====== */
+        main {
+            flex: 1;
+            max-width: 900px;
+            width: 90%;
+            margin: 2.5rem auto;
+            background: #16191f;
+            border: 1px solid #2a2d34;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        section h2 {
+            color: #4f8cff;
+            margin-bottom: 0.8rem;
+            border-left: 4px solid #4f8cff;
+            padding-left: 0.5rem;
+        }
+
+        section p {
+            color: #ccc;
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #4f8cff;
+            color: white;
+            text-decoration: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 6px;
+            margin-top: 1rem;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #1d5fd1;
+        }
+
+        /* ====== FOOTER ====== */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            color: #888;
+            font-size: 0.9rem;
+            border-top: 1px solid #2a2d34;
+            background: #0f1115;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Servidor Web AWS EC2</h1>
+        <p>Hospedado na nuvem com Apache2 e VPC personalizada</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Sobre o Projeto</h2>
+            <p>
+                Este projeto faz parte da atividade de redes na nuvem. A estrutura foi provisionada
+                dentro da plataforma <strong>AWS (Amazon Web Services)</strong>, utilizando uma
+                <strong>VPC customizada</strong> com sub-redes públicas e privadas.
+            </p>
+        </section>
+
+        <section>
+            <h2>Infraestrutura</h2>
+            <p>
+                A máquina virtual (instância <strong>EC2</strong>) está configurada na subnet pública,
+                acessível pela internet através do <strong>Internet Gateway</strong>.
+                O serviço <strong>Apache2</strong> está instalado e servindo esta página.
+            </p>
+        </section>
+
+        <section>
+            <h2>Objetivo</h2>
+            <p>
+                Demonstrar a criação e funcionamento de um ambiente básico na nuvem AWS, com acesso
+                público a um servidor web funcional, confirmando o entendimento dos componentes de rede
+                e hospedagem.
+            </p>
+            <a href="#" class="btn">Ver detalhes</a>
+        </section>
+    </main>
+
+    <footer>
+        © 2025 — Projeto AWS EC2 e VPC | Desenvolvido para atividade prática
+    </footer>
+</body>
+
+</html>
