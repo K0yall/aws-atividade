@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #0f1115 0%, #1a1d24 100%);
+    color: #e6e6e6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(180deg, #16191f 0%, #1c1f26 100%);
+    text-align: center;
+    padding: 3rem 1.5rem;
+    border-bottom: 2px solid #2a2d34;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #4f8cff 0%, #3b7eeb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.02em;
+}
+
+header p {
+    color: #a8b0b8;
+    font-size: 1.05rem;
+    font-weight: 400;
+}
+
+main {
+    flex: 1;
+    max-width: 920px;
+    width: 90%;
+    margin: 3rem auto;
+    background: #16191f;
+    border: 1px solid #2a2d34;
+    border-radius: 12px;
+    padding: 2.5rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+section {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #252930;
+}
+
+section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+section h2 {
+    color: #4f8cff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    border-left: 4px solid #4f8cff;
+    padding-left: 0.75rem;
+    letter-spacing: -0.01em;
+}
+
+section p {
+    color: #d1d5db;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+section p strong {
+    color: #4f8cff;
+    font-weight: 600;
+}
+
+.btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #4f8cff 0%, #3b7eeb 100%);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.85rem 1.75rem;
+    border-radius: 8px;
+    margin-top: 1.25rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(79, 140, 255, 0.3);
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #3b7eeb 0%, #2868d8 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(79, 140, 255, 0.4);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    color: #888;
+    font-size: 0.95rem;
+    border-top: 1px solid #2a2d34;
+    background: #0f1115;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 0.95rem;
+    }
+
+    main {
+        padding: 1.75rem;
+        margin: 2rem auto;
+    }
+
+    section h2 {
+        font-size: 1.3rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+}
